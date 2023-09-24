@@ -1,0 +1,60 @@
+.personTile {
+  width: 400px;
+  height: fit-content;
+  background-color: var(--background);
+  /* background-color: aliceblue; */
+  /* background: radial-gradient(
+      circle at -4% -12.9%,
+      rgb(74, 98, 110) 0.3%,
+      rgb(30, 33, 48) 90.2%
+    ); */
+  /* background: radial-gradient(
+      circle at 10% 20%,
+      rgb(0, 0, 0) 0%,
+      rgb(64, 64, 64) 90.2%
+    ); */
+  /* background: linear-gradient(to right, #232526, #414345) */
+  border-radius: 30px;
+  box-shadow: rgb(27 168 233 / 40%) -5px -2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personTile div {
+  margin-bottom: 20px;
+  width: fit-content;
+  justify-self: center;
+}
+.personPhoto, .personTitle, .personName{
+    box-shadow: rgb(27 168 233 / 40%) -5px -2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.personPhoto {
+  margin-top: 20px;
+  /* padding-top: 10px; */
+  border-radius: 400px;
+  width: 200px;
+  height: 198px;
+}
+.personPhoto img {
+  border-radius: 400px;
+  width: 200px;
+  height: 201px;
+}
+.wrapBox {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-around;
+}
+.personTile div{
+    justify-content: right;
+}

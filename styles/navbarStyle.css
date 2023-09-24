@@ -1,0 +1,275 @@
+.navbar {
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  /* background-color: blue; */
+  width: 80px;
+}
+#navContainer {
+  width: 80px;
+  height: 80px;
+  /* right: 0; */
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+#navImage {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.navContainer {
+  height: 82px; /*changeThis 100vh*/
+  width: 82px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  position: absolute;
+  /* margin: auto; */
+  /* left: 0; */
+  left: 0;
+  bottom: 0;
+  border-radius: 10%;
+  overflow: hidden;
+  /* animation: spin 8s infinite linear; */
+  /* box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px; */
+  /* box-shadow: rgb(14 230 230) 7px -3px 20px 0px; */
+  box-shadow: rgb(14 230 230) 2px -1px 20px 0px;
+  z-index: 3;
+  transition: all 1.5s cubic-bezier(0.54, 0.1, 0.31, 1.08);
+}
+
+html{
+  overflow: hidden;
+}
+.elements {
+  margin-top: 4vh;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2vh;
+  z-index: 10;
+  position: fixed;
+}
+.elements a{
+    opacity: 0;
+}
+.elements a img {
+  width: 60px;
+  height: 60px;
+}
+.elements a {
+  width: max-content;
+  height: 60px;
+  width: 60px;
+  background-color: #00afff;
+  /* background-color: white; */
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+
+  /* box-shadow: rgba(29, 199, 233, 0.85) 0px 30px 60px -12px inset,
+    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
+
+  /* box-shadow: rgba(29, 199, 233, 0.85) -16px -19px 13px -12px inset,
+    rgba(255, 255, 255, 0.972) 0px 18px 36px -18px inset; */
+
+  /* box-shadow: rgba(50, 81, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+
+  box-shadow: rgba(50, 81, 93, 0.25) 2px 2px 9px 4px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+  /* box-shadow: rgba(29, 199, 233, 0.85) 4px -4px 8px 2px inset,
+    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
+
+  /* box-shadow: rgba(29, 199, 233, 0.85) 7px -6px 9px 0px inset,
+    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
+
+  /* box-shadow: rgba(29, 199, 233, 0.85) -2px 1px 7px 1px inset,
+    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navContainer:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 10%; /*changeThing, 5%*/
+  overflow: hidden;
+  backdrop-filter: blur(.9em); /*changeThing, 1.2*/
+}
+
+.navContainer:after,
+.navContainer:after {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  border-radius: 50%;
+}
+
+.navContainer div {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  animation: scale-up infinite;
+}
+
+@keyframes scale-up {
+  50% {
+    transform: scale(1.8);
+  }
+}
+
+.navContainer div:nth-child(1) {
+  height: 150%;
+  width: 100%;
+  background-color: var(--TeensTeachAlt1);
+  left: -5%;
+  top: 0;
+  animation-duration: 50s;
+  animation-delay: 1s;
+}
+
+.navContainer div:nth-child(2) {
+  height: 100%;
+  width: 100%;
+  background-color: var(--TeensTeachAlt2);
+  top: 15%;
+  right: -15%;
+  animation-duration: 45s;
+  animation-delay: 5s;
+}
+
+.navContainer div:nth-child(3) {
+  height: 100%;
+  width: 80%;
+  background-color: var(--TeensTeachAlt3);
+  bottom: -30%;
+  right: -20%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+
+.navContainer div:nth-child(4) {
+  height: 50%;
+  width: 75%;
+  background-color: var(--TeensTeachAlt4);
+  bottom: -5%;
+  left: 8%;
+  animation-duration: 7s;
+  animation-delay: 6s;
+}
+
+.navContainer div:nth-child(5) {
+  height: 45%;
+  width: 55%;
+  background-color: var(--TeensTeachAlt5);
+  top: 50%;
+  left: 0;
+  animation-duration: 2.5s;
+  animation-delay: 4s;
+}
+
+.backShadow {
+  width: 80vh;
+  height: 80vh;
+  background-color: white;
+  box-shadow: rgba(14, 230, 230, 0.308) 4px 20px 22px -7px;
+  z-index: -1;
+  position: absolute;
+  margin: auto;
+  border-radius: 10000px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 40px;
+}
+
+.navContainer div:nth-child(6) {
+  height: 25%;
+  width: 55%;
+  background-color: var(--TeensTeachBlue);
+  top: 45%;
+  left: -15%;
+  animation-duration: 9s;
+}
+.navContainer div:nth-child(7) {
+  height: 125%;
+  width: 55%;
+  background-color: var(--TeensTeachAlt6);
+  top: 0;
+  z-index: -2;
+  left: -15%;
+  animation-duration: 5s;
+}
+.navContainer div:nth-child(8) {
+  height: 125%;
+  width: 55%;
+  background-color: var(--TeensTeachAlt5);
+  top: 0;
+  z-index: -2;
+  right: -5%;
+  animation-duration: 5s;
+}
+.navContainer div:nth-child(9) {
+  height: 55%;
+  width: 25%;
+  background-color: var(--TeensTeachAlt6);
+  top: -20%;
+  right: 50%;
+  animation-duration: 15s;
+  animation-delay: 3s;
+}
+.navContainer div:nth-child(10) {
+  height: 25%;
+  width: 55%;
+  background-color: var(--TeensTeachAlt7);
+  top: -10%;
+  right: 5%;
+  animation-duration: 12s;
+}
+.navContainer div:nth-child(11) {
+  height: 25%;
+  width: 55%;
+  background-color: var(--TeensTeachAlt8);
+  top: -10%;
+  z-index: -2;
+  right: 55%;
+  animation-duration: 7s;
+}
+.elements div:nth-child(1){
+    transition-duration: all 3s;
+}
+#backgroundText h1{
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  height: 89vh;
+  width: 80px;
+  margin-left: -12px;
+  color: var(--TeensTeachBlue);
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comfortaa", cursive;
+}
+#backgroundText{
+  position: absolute;
+  z-index: -2px;
+}

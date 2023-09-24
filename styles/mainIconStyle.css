@@ -1,0 +1,199 @@
+:root {
+  --background: #242121;
+  --TeensTeachBlue: #1ba8e9;
+  --TeensTeachAlt1: #45bfd7;
+  --TeensTeachAlt2: #1ea4cd;
+  --TeensTeachAlt3: #1b7fe9;
+  --TeensTeachAlt4: #1ba8e5;
+  --TeensTeachAlt5: #1b55e9;
+  --TeensTeachAlt6: #26f1f4;
+  --TeensTeachAlt7: #3371c1;
+  --TeensTeachAlt8: #18c9e0;
+  --TeensTeachAlt9: #1042c0;
+}
+
+#mainImage {
+  /* box-shadow: rgba(14, 230, 230, 0.2) 2px 30px 30px -7px; */
+  border-radius: 70000px;
+  /* border-color: transparent;
+    background-color: transparent;
+    color: transparent; */
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 70vh;
+  height: 70vh;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* box-shadow: rgba(14, 230, 230, 0.2) 2px 30px 30px -7px; */
+}
+
+.container {
+  height: 80vh;
+  width: 80vh;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 8s infinite linear;
+  z-index: 2;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  backdrop-filter: blur(1.1em);
+}
+
+.container:after,
+.container:after {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  border-radius: 50%;
+}
+
+.container div {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  animation: scale-up infinite;
+}
+
+@keyframes scale-up {
+  50% {
+    transform: scale(1.8);
+  }
+}
+
+.container div:nth-child(1) {
+  height: 90%;
+  width: 100%;
+  background-color: var(--TeensTeachAlt1);
+  left: -5%;
+  top: -5%;
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+.container div:nth-child(2) {
+  height: 80%;
+  width: 70%;
+  background-color: var(--TeensTeachAlt2);
+  top: 15%;
+  right: -15%;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+.container div:nth-child(3) {
+  height: 65%;
+  width: 80%;
+  background-color: var(--TeensTeachAlt3);
+  bottom: -30%;
+  right: -20%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+
+.container div:nth-child(4) {
+  height: 50%;
+  width: 75%;
+  background-color: var(--TeensTeachAlt4);
+  bottom: -5%;
+  left: 8%;
+  animation-duration: 7s;
+  animation-delay: 6s;
+}
+
+.container div:nth-child(5) {
+  height: 45%;
+  width: 55%;
+  background-color: var(--TeensTeachAlt5);
+  top: 50%;
+  left: 0;
+  animation-duration: 2.5s;
+  animation-delay: 4s;
+}
+
+.backShadow {
+  width: 80vh;
+  height: 80vh;
+  background-color: #242121ff;
+  box-shadow: rgba(14, 230, 230, 0.308) 4px 20px 22px -7px;
+  z-index: -1;
+  position: absolute;
+  margin: auto;
+  border-radius: 10000px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 40px;
+}
+
+.container div:nth-child(6) {
+  height: 25%;
+  width: 55%;
+  background-color: var(--TeensTeachBlue);
+  top: 45%;
+  left: -15%;
+  animation-duration: 9s;
+}
+#slogan {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin-bottom: 30px;
+  bottom: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: whitesmoke;
+}
+#title {
+  color: var(--TeensTeachBlue);
+  margin-top: 30px;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comfortaa", cursive;
+}
+.frontPage {
+  display: flex;
+  flex-direction: row;
+}
+#title {
+  top: 0;
+  text-align: center;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 20px;
+}

@@ -1,0 +1,16 @@
+.iconTile{
+    width: 15vw;
+    height: 15vw;
+    background-color: var(--background);
+    
+    border-radius: 10px;
+    box-shadow: rgb(27 168 233 / 40%) -5px -2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.iconImage{
+    width: 15vw;
+}
