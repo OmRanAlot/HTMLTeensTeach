@@ -66,6 +66,7 @@
   width: 100%;
   border-radius: 50%;
   backdrop-filter: blur(1.1em);
+  -webkit-backdrop-filter: blur(1.1em);
 }
 
 .container:after,
