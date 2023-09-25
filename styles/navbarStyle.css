@@ -111,6 +111,7 @@ html{
   border-radius: 10%; /*changeThing, 5%*/
   overflow: hidden;
   backdrop-filter: blur(.9em); /*changeThing, 1.2*/
+  -webkit-backdrop-filter: blur(.9em);
 }
 
 .navContainer:after,
@@ -264,7 +265,7 @@ html{
   width: 80px;
   margin-left: -12px;
   color: var(--TeensTeachBlue);
-  font-size: 45px;
+  font-size: 6vh;
   text-align: center;
   font-weight: bold;
   font-family: "Comfortaa", cursive;

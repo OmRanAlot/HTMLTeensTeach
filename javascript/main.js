@@ -116,7 +116,7 @@ let lamarrName = document.createElement("div");
 lamarrName.className = "personName";
 let lamarrNameClass = document.createElement("p");
 lamarrNameClass.className = "nameClass";
-lamarrNameClass.innerHTML = "Om Rana";
+lamarrNameClass.innerHTML = "Lamarr Olive";
 lamarrName.appendChild(lamarrNameClass);
 let lamarrBreak = document.createElement("hr");
 let lamarrDescriptionClass = document.createElement("div");
@@ -172,7 +172,7 @@ let kennedyName = document.createElement("div");
 kennedyName.className = "personName";
 let kennedyNameClass = document.createElement("p");
 kennedyNameClass.className = "nameClass";
-kennedyNameClass.innerHTML = "Om Rana";
+kennedyNameClass.innerHTML = "Kennedy Sheppard";
 kennedyName.appendChild(kennedyNameClass);
 let kennedyBreak = document.createElement("hr");
 let kennedyDescriptionClass = document.createElement("div");
@@ -250,30 +250,85 @@ mainSection2.appendChild(divContainer6);
 mainSection2.appendChild(peopleContainer);
 aboutPage.appendChild(mainSection2);
 
-const translatePress = new Map();
-translatePress.set("mission_div", MissionPage);
-translatePress.set("about_us_div", aboutPage);
-// translatePress.set("impact_div", <ImpactPage />);
 // translatePress.set("what_we_do_div", <WorkPage />);
 // translatePress.set("contact_div", <ContactPage />);
 // translatePress.set("donate_div", <DonatePage />);
+
+let homePage = document.createElement("div");
+homePage.className = "frontPage";
+let homeTitle = document.createElement("div");
+homeTitle.className = "title";
+let hHomeTitle = document.createElement("h1");
+hHomeTitle.innerHTML = "Teens Teach";
+homeTitle.appendChild(hHomeTitle);
+let homeMainIcon = document.createElement("div");
+homeMainIcon.className = "mainIcon";
+let homeImageHolder = document.createElement("div");
+homeImageHolder.className = "imageHolder";
+let homeImg = document.createElement("img");
+homeImg.id = "mainImage";
+homeImg.src = "assets/images/mainIMG.png";
+homeImageHolder.appendChild(homeImg);
+let homeBackShadow = document.createElement("div");
+homeBackShadow.className = "backShadow";
+homeMainIcon.appendChild(homeImageHolder);
+homeMainIcon.appendChild(homeBackShadow);
+let homeSlogan = document.createElement("div");
+homeSlogan.id = "slogan";
+let homeSloganh2 = document.createElement("h2");
+homeSloganh2.innerHTML = '"Educate the Youth. Create a brighter tomorrow."';
+homeSlogan.appendChild(homeSloganh2);
+homePage.appendChild(homeTitle);
+homePage.appendChild(homeMainIcon);
+homePage.appendChild(homeSlogan);
+
+const translatePress = new Map();
+translatePress.set("mission_div", MissionPage);
+translatePress.set("about_us_div", aboutPage);
+translatePress.set("home_div", homePage);
 
 for (const element of navIcons) {
   element.addEventListener("click", () => {
     for (const option of translatePress) {
       if (element.id == option[0]) {
         document.querySelector(".frontPage").replaceWith(option[1]);
-        document.querySelector(".background").style.width = "80vh";
-        document.querySelector(".background").style.height = "80vh";
-        document.querySelector(".background").style.borderRadius = "50%";
-        var delayInMilliseconds = 1500;
-        setTimeout(function () {
-          document.querySelector(".background").style.transform ="translateX(47px)";
-          document.querySelector(".background").style.borderRadius = "20px";
-          document.querySelector(".background").style.width =
-            "calc(100% - 94px)";
-          document.querySelector(".background").style.height = "99vh";
-        }, delayInMilliseconds);
+        if (element.id == "home_div") {
+          document.querySelector(".background").style.width = "35vh";
+          document.querySelector(".background").style.height = "35vh";
+          document.querySelector(".background").style.margin = "0";
+          document.querySelector(".background").style.margin = "auto";
+          document.querySelector(".background").style.marginLeft = "31%";
+          document.querySelector(".background").style.borderRadius = "50%";
+          
+          document.querySelector(".background").style.transform = "none";
+          document.querySelector(".title").style.opacity = "0";
+        } else {
+          document.querySelector(".background").style.width = "10vh";
+          document.querySelector(".background").style.height = "100vh";
+          document.querySelector(".background").style.marginLeft = "0px";
+          document.querySelector(".background").style.borderRadius = "5%";
+          document.querySelector(".background").style.margin = "auto";
+          document.querySelector(".background").style.marginLeft = "0px";
+          var delayInMilliseconds = 2000;
+          setTimeout(function () {
+            document.querySelector(".background").style.transform =
+              "translateX(47px)";
+            document.querySelector(".background").style.borderRadius = "20px";
+            document.querySelector(".background").style.width =
+              "calc(100% - 94px)";
+
+            if (screen.width < 700) {
+              document.querySelector(".navContainer").style.height = "98vh";
+            } else {
+              document.querySelector(".navContainer").style.height = "99vh";
+            }
+          }, delayInMilliseconds);
+          if (screen.width < 700) {
+            document.querySelector(".background").style.marginTop = "7px";
+            document.querySelector(".background").style.marginLeft = "39px";
+            document.querySelector(".background").style.height = "98vh";
+          }
+        }
       }
     }
   });

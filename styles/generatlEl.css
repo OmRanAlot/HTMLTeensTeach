@@ -1,4 +1,4 @@
-body{
+body {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -147,4 +147,61 @@ hr {
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  #mainImage {
+    width: 30vh;
+    height: 30vh;
+    margin-left: 35%;
+  }
+  .background {
+    width: 35vh;
+    height: 35vh;
+    margin-left: 31%;
+  }
+  .backShadow {
+    width: 35vh;
+    height: 35vh;
+    margin-left: 31%;
+  }
+  #title {
+    opacity: 0;
+  }
+  #backgroundText h1 {
+    margin-left: -20px;
+  }
+  .navContainer {
+    width: 72px;
+    height: 72px;
+  }
+  #navImage {
+    width: 60px;
+    height: 60px;
+  }
+  #slogan {
+    margin-top: 10px;
+    top: 0;
+    margin-left: 65px;
+  }
+  .elements {
+    margin-left: 16px;
+  }
+  .elements a {
+    height: 50px;
+    width: 50px;
+  }
+  .elements a img {
+    width: 50px;
+    height: 50px;
+  }
+  .smallText {
+    font-size: 20px;
+  }
+  .descriptionClass {
+    font-size: 15px;
+  }
+  #pageTitle {
+    font-size: 40px;
+  }
+  
 }
