@@ -19,16 +19,21 @@
   margin-left: 90px;
 }
 .background {
-  height: 99vh; /*changeThis 100vh*/
+  /* height: 99vh; *//* border-radius: 20px; *//* width: calc(100% - 94px); */
+  height: 80vh;
+  width: 80vh;
   margin-bottom: 0.5vh;
   /* margin-left: 90px; */
-  width: calc(100% - 94px);
+  border-radius: 50%;
   position: absolute;
-  /* margin: auto; */
+  margin: auto;
   /* left: 0; */
   left: 0;
+  right: 0;
+  top: 0;
   bottom: 0;
-  border-radius: 20px;
+
+  
   overflow: hidden;
   /* animation: spin 8s infinite linear; */
   /* box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px; */
@@ -69,8 +74,8 @@ body{
   width: 100%;
   border-radius: 20px; /*changeThing, 5%*/
   overflow: hidden;
-  backdrop-filter: blur(4em); /*changeThing, 1.2*/
-  -webkit-backdrop-filter: blur(4em);
+  backdrop-filter: blur(2em); /*changeThing, 1.2*/
+  -webkit-backdrop-filter: blur(2em);
 }
 
 .background:after,

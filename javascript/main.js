@@ -72,7 +72,6 @@ smallText2.innerHTML =
 missionParagraph2.appendChild(smallText2);
 divContainer4.appendChild(missionParagraph2);
 
-
 divContainer1.appendChild(pageTitle);
 mainSection.appendChild(divContainer1);
 mainSection.appendChild(divContainer2);
@@ -264,7 +263,17 @@ for (const element of navIcons) {
     for (const option of translatePress) {
       if (element.id == option[0]) {
         document.querySelector(".frontPage").replaceWith(option[1]);
-        // document.querySelector(".background").style.height=""
+        document.querySelector(".background").style.width = "80vh";
+        document.querySelector(".background").style.height = "80vh";
+        document.querySelector(".background").style.borderRadius = "50%";
+        var delayInMilliseconds = 1500;
+        setTimeout(function () {
+          document.querySelector(".background").style.transform ="translateX(47px)";
+          document.querySelector(".background").style.borderRadius = "20px";
+          document.querySelector(".background").style.width =
+            "calc(100% - 94px)";
+          document.querySelector(".background").style.height = "99vh";
+        }, delayInMilliseconds);
       }
     }
   });
