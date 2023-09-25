@@ -70,6 +70,7 @@ body{
   border-radius: 20px; /*changeThing, 5%*/
   overflow: hidden;
   backdrop-filter: blur(4em); /*changeThing, 1.2*/
+  -webkit-backdrop-filter: blur(4em);
 }
 
 .background:after,
