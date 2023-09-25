@@ -238,7 +238,7 @@ let marlonDescription = document.createElement("p");
 marlonDescription.className = "descriptionClass";
 marlonDescription.innerHTML =
   "“People take many things in life for granted. Commodities, experiences, moments that you may think are ordinary to you, but are alien to others. Education is something to never take for granted and with Teens Teach, I want to make sure that education is never taken for granted.”";
-markDescriptionClass.appendChild(marlonDescription);
+marlonDescriptionClass.appendChild(marlonDescription);
 marlon.appendChild(marlonPhoto);
 marlon.appendChild(marlonName);
 marlon.appendChild(marlonBreak);
@@ -264,6 +264,7 @@ for (const element of navIcons) {
     for (const option of translatePress) {
       if (element.id == option[0]) {
         document.querySelector(".frontPage").replaceWith(option[1]);
+        // document.querySelector(".background").style.height=""
       }
     }
   });
