@@ -293,22 +293,9 @@ for (const element of navIcons) {
       if (element.id == option[0]) {
         document.querySelector(".frontPage").replaceWith(option[1]);
         if (element.id == "home_div") {
-          document.querySelector(".background").style.width = "35vh";
-          document.querySelector(".background").style.height = "35vh";
-          document.querySelector(".background").style.margin = "0";
-          document.querySelector(".background").style.margin = "auto";
-          document.querySelector(".background").style.marginLeft = "31%";
-          document.querySelector(".background").style.borderRadius = "50%";
-          
-          document.querySelector(".background").style.transform = "none";
-          document.querySelector(".title").style.opacity = "0";
+          document.querySelector(".background").style.opacity = "1";
         } else {
-          document.querySelector(".background").style.width = "10vh";
-          document.querySelector(".background").style.height = "100vh";
-          document.querySelector(".background").style.marginLeft = "0px";
-          document.querySelector(".background").style.borderRadius = "5%";
-          document.querySelector(".background").style.margin = "auto";
-          document.querySelector(".background").style.marginLeft = "0px";
+          document.querySelector(".background").style.opacity = "0";
           var delayInMilliseconds = 2000;
           setTimeout(function () {
             document.querySelector(".background").style.transform =
