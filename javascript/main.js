@@ -298,12 +298,6 @@ for (const element of navIcons) {
           document.querySelector(".background").style.opacity = "0";
           var delayInMilliseconds = 2000;
           setTimeout(function () {
-            document.querySelector(".background").style.transform =
-              "translateX(47px)";
-            document.querySelector(".background").style.borderRadius = "20px";
-            document.querySelector(".background").style.width =
-              "calc(100% - 94px)";
-
             if (screen.width < 700) {
               document.querySelector(".navContainer").style.height = "98vh";
             } else {
@@ -311,9 +305,6 @@ for (const element of navIcons) {
             }
           }, delayInMilliseconds);
           if (screen.width < 700) {
-            document.querySelector(".background").style.marginTop = "7px";
-            document.querySelector(".background").style.marginLeft = "39px";
-            document.querySelector(".background").style.height = "98vh";
           }
         }
       }
