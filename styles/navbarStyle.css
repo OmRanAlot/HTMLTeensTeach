@@ -16,13 +16,8 @@
   right: 0;
 }
 #navImage {
-  position: fixed;
   width: 70px;
   height: 70px;
-  bottom: 0;
-  z-index: 4;
-  margin-left: 10px;
-  margin-bottom: 10px;
 }
 
 /* .navContainer {
@@ -148,7 +143,12 @@ html {
     transform: scale(1.8);
   }
 }
-
+#home_div{
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.customWidget{
+  width: 200px;
+}
 .navContainer div:nth-child(1) {
   height: 150%;
   width: 100%;
