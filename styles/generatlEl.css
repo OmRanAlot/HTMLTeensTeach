@@ -2,6 +2,7 @@ body {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+
 }
 a{
   color: white;
@@ -48,7 +49,6 @@ a{
 .mainSection {
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
   height: 99vh;
 }
 .divContainer {
@@ -73,8 +73,8 @@ a{
   font-size: 20px;
   padding: 10px;
   padding-left: 10px;
-  color: var(--TeensTeachAlt8);
-  /* color: white; */
+  /* color: var(--TeensTeachAlt8); */
+  color: white;
   /* color: var(--background); */
   /* color: black; */
   font-weight: bold;
@@ -91,7 +91,7 @@ hr {
   padding: 10px;
   padding-left: 10px;
   /* color: var(--TeensTeachAlt8); */
-  color: grey;
+  color: rgb(185, 184, 184);
   /* color: var(--background); */
   /* color: black; */
   font-weight: bold;
@@ -99,13 +99,9 @@ hr {
   text-align: center;
   width: fit-content;
 }
-.impactWrap {
-  overflow-y: scroll;
-}
 .mainWrap {
   display: flex;
   flex-direction: row;
-  overflow-y: scroll;
   height: 99vh;
   flex-wrap: wrap;
   margin-left: 10%;
