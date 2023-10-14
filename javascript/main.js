@@ -1,7 +1,7 @@
 let menuDirective = document.querySelector(".navContainer");
 let menuIcon = document.getElementById("navImage");
 let menuOpen = false;
-menuDirective.onclick = openMenu;
+// menuDirective.onclick = openMenu;
 menuIcon.onclick = openMenu;
 let page = document.querySelector(".frontPage");
 const navIcons = document.querySelectorAll(".elements a");

@@ -110,6 +110,11 @@ html {
     transform: rotate(360deg);
   }
 }
+.frontContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
 .frontPage {
   width: 700px;
   display: flex;
@@ -117,6 +122,8 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
+  position: fixed;
+  z-index: 10;
 }
 .frontPage div {
   justify-content: space-between;
@@ -155,9 +162,7 @@ html {
     transform: scale(1.8);
   }
 }
-#home_div {
-  background-color: rgba(0, 0, 0, 0.85);
-}
+
 .customWidget {
   width: max-content;
   display: flex;
@@ -178,6 +183,7 @@ html {
   padding-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 100px;
 }
 .option h1:hover {
   cursor: pointer;
@@ -321,4 +327,9 @@ html {
 #backgroundText {
   position: absolute;
   z-index: -2px;
+}
+#mission_div img{
+  width: 38px;
+  height: 38px;
+  /* padding-bottom: 5px; */
 }
