@@ -25,8 +25,8 @@
   top: 0;
   bottom: 0;
   z-index: 3;
-  width: 70vh;
-  height: 70vh;
+  width: 60vh;
+  height: 60vh;
 }
 
 *,
@@ -144,8 +144,8 @@
 }
 
 .backShadow {
-  width: 80vh;
-  height: 80vh;
+  width: 70vh;
+  height: 70vh;
   background-color: #242121ff;
   box-shadow: rgba(14, 230, 230, 0.308) 4px 20px 22px -7px;
   z-index: -1;
@@ -178,23 +178,16 @@
   color: whitesmoke;
 }
 #title {
-  color: var(--TeensTeachBlue);
-  margin-top: 30px;
+  color: black;
   font-size: 2em;
   text-align: center;
   font-weight: bold;
   font-family: "Comfortaa", cursive;
 }
-.frontPage {
-  display: flex;
-  flex-direction: row;
-}
 #title {
-  top: 0;
   text-align: center;
-  right: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 15px;
+  margin-top: 8px;
   font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }

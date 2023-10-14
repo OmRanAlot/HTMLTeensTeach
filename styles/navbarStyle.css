@@ -1,9 +1,11 @@
 .navbar {
-  height: 100vh;
   position: fixed;
   bottom: 0;
   /* background-color: blue; */
   width: 80px;
+  margin: auto;
+  right: 0;
+  left: 0;
 }
 #navContainer {
   width: 80px;
@@ -17,60 +19,59 @@
   position: fixed;
   width: 70px;
   height: 70px;
-  left: 0;
   bottom: 0;
   z-index: 4;
   margin-left: 10px;
   margin-bottom: 10px;
 }
 
-.navContainer {
-  height: 82px; /*changeThis 100vh*/
-  width: 82px;
+/* .navContainer {
+  height: 82px; /*changeThis 100vh
+  width: 200px;
   margin-left: 4px;
   margin-bottom: 4px;
   position: absolute;
-  /* margin: auto; */
-  /* left: 0; */
+  /* margin: auto; 
+   left: 0; 
   left: 0;
   bottom: 0;
-  border-radius: 10%;
+  border-radius: 100px;
   overflow: hidden;
-  /* animation: spin 8s infinite linear; */
-  /* box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px; */
-  /* box-shadow: rgb(14 230 230) 7px -3px 20px 0px; */
+  animation: spin 8s infinite linear; 
+  box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px;
+  box-shadow: rgb(14 230 230) 7px -3px 20px 0px;
   box-shadow: rgb(14 230 230) 2px -1px 20px 0px;
   z-index: 3;
   transition: all 1.5s cubic-bezier(0.54, 0.1, 0.31, 1.08);
-}
+} */
 
-html{
+html {
   overflow: hidden;
 }
-.elements {
-  margin-top: 4vh;
+.firstElements,
+.lastElements {
   height: 75vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 2vh;
   z-index: 10;
-  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
 }
-.elements a{
-    opacity: 0;
+.firstElements a img,
+.lastElements a img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
 }
-.elements a img {
-  width: 60px;
-  height: 60px;
-}
-.elements a {
+.firstElements a,
+.lastElements a {
   width: max-content;
-  height: 60px;
-  width: 60px;
-  background-color: #00afff;
+  height: 56px;
+  width: 55px;
+  background-color: rgba(0, 175, 255, 0.1);
   /* background-color: white; */
-  border-radius: 10px;
+  border-radius: 100px;
+  margin-left: 3px;
+  margin-right: 3px;
 
   display: flex;
   flex-direction: row;
@@ -102,19 +103,29 @@ html{
     transform: rotate(360deg);
   }
 }
-
-.navContainer:before {
+.frontPage {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+.frontPage div {
+  justify-content: space-between;
+}
+/* .navContainer:before {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  border-radius: 10%; /*changeThing, 5%*/
+  border-radius: 10%; /*changeThing, 5%
   overflow: hidden;
-  backdrop-filter: blur(.9em); /*changeThing, 1.2*/
-  -webkit-backdrop-filter: blur(.9em);
-}
+  backdrop-filter: blur(0.9em); /*changeThing, 1.2
+  -webkit-backdrop-filter: blur(0.9em);
+} */
 
-.navContainer:after,
+/* .navContainer:after,
 .navContainer:after {
   position: absolute;
   content: "";
@@ -123,14 +134,14 @@ html{
   top: 25%;
   left: 25%;
   border-radius: 50%;
-}
+} */
 
-.navContainer div {
+/* .navContainer div {
   position: absolute;
   border-radius: 50%;
   z-index: -1;
   animation: scale-up infinite;
-}
+} */
 
 @keyframes scale-up {
   50% {
@@ -255,10 +266,10 @@ html{
   right: 55%;
   animation-duration: 7s;
 }
-.elements div:nth-child(1){
-    transition-duration: all 3s;
+.elements div:nth-child(1) {
+  transition-duration: all 3s;
 }
-#backgroundText h1{
+#backgroundText h1 {
   text-orientation: upright;
   writing-mode: vertical-rl;
   height: 89vh;
@@ -270,7 +281,7 @@ html{
   font-weight: bold;
   font-family: "Comfortaa", cursive;
 }
-#backgroundText{
+#backgroundText {
   position: absolute;
   z-index: -2px;
 }
