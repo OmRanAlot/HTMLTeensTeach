@@ -15,10 +15,10 @@
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
-.mainSection,
+/* .mainSection,
 .background {
   margin-left: 90px;
-}
+} */
 .background {
   /* height: 99vh; */ /* border-radius: 20px; */ /* width: calc(100% - 94px); */
   height: 65px;

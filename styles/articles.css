@@ -1,0 +1,121 @@
+#forum_div {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+#articleButton {
+  background-color: var(--TeensTeachBlue);
+}
+.articleText {
+  font-family: "Courier New";
+  font-size: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#userProfile img {
+  margin-top: 2px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+hr {
+  margin-left: 25px;
+}
+#infoContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+  justify-content: space-around;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* background-color: rgb(54, 53, 53); */
+  background-color: var(--TeensTeachBlue);
+  box-shadow: rgba(36, 38, 39, 0.25) 2px 2px 9px 4px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#infoContainer div {
+  margin: auto;
+}
+.userTitleText {
+  font-size: 40px;
+}
+.userNameText {
+  font-size: 20px;
+}
+#authorBox {
+  display: flex;
+  flex-direction: row;
+  border-radius: 100px;
+  padding-left: 4px;
+  padding-right: 7px;
+}
+#authorBox div {
+  margin: auto;
+}
+#infoContainer p {
+  font-family: "Comfortaa", cursive;
+}
+.dateText {
+  font-size: 20px;
+}
+#reactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#reactions p {
+  font-family: "Comfortaa", cursive;
+  color: #959595;
+}
+#reactions div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#reactions div div {
+  padding-left: 7px;
+}
+#reactions img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 6px;
+}
+#reactions img:hover {
+  cursor: pointer;
+}
+#thoughtImage img {
+  width: 23px;
+  height: 23px;
+  margin-top: -6px;
+}
+#fireImage img {
+  width: 25px;
+  height: 25px;
+  margin-top: -6px;
+}
+.articleTile {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--background);
+  /* background-color: aliceblue; */
+  /* background: radial-gradient(
+          circle at -4% -12.9%,
+          rgb(74, 98, 110) 0.3%,
+          rgb(30, 33, 48) 90.2%
+        ); */
+  /* background: radial-gradient(
+          circle at 10% 20%,
+          rgb(0, 0, 0) 0%,
+          rgb(64, 64, 64) 90.2%
+        ); */
+  /* background: linear-gradient(to right, #232526, #414345) */
+  border-radius: 10px;
+  box-shadow: rgb(27 168 233 / 40%) 2px 2px 12px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  /* rgb(27 168 233 / 40%) -5px -2px 4px, */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
