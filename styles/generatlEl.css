@@ -2,9 +2,8 @@ body {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
 }
-a{
+a {
   color: white;
   text-decoration: none;
 }
@@ -39,8 +38,8 @@ a{
   ); */
   /* background: linear-gradient(to right, #232526, #414345) */
   border-radius: 10px;
-  box-shadow: 
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
   /* rgb(27 168 233 / 40%) -5px -2px 4px, */
   margin-bottom: 20px;
@@ -129,7 +128,7 @@ hr {
   ); */
   /* background: linear-gradient(to right, #232526, #414345) */
   border-radius: 10px;
-  box-shadow: rgb(27 168 233 / 40%) -5px -2px 4px,
+  box-shadow: rgb(27 168 233 / 40%) -2px -2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
   margin-bottom: 10px;
@@ -158,7 +157,6 @@ hr {
     width: 35vh;
     height: 35vh;
     margin-left: 31%;
-
   }
   .backShadow {
     width: 35vh;
@@ -204,5 +202,12 @@ hr {
   #pageTitle {
     font-size: 40px;
   }
-  
+}
+#account_div img {
+  width: 43px;
+  height: 43px;
+}
+#home_div img{
+  width: 47px;
+  height: 47px;
 }

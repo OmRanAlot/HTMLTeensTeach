@@ -11,15 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
       rel="stylesheet"
     />
-    
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <link rel="stylesheet" href="../../styles/generatlEl.css" />
-    
-    
+
     <!-- <link rel="stylesheet" href="../../styles/mission.css" /> -->
     <link rel="stylesheet" href="../../styles/navbarStyle.css" />
     <link rel="stylesheet" href="../../styles/backgroundPage.css" />
     <link rel="stylesheet" href="../../styles/mainIconStyle.css" />
-    <link rel="stylesheet" href="../../styles/impact.css" />
+    <link rel="stylesheet" href="../../styles/account.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -61,93 +60,39 @@
         </div>
         <div class="lastElements">
           <a id="home_div" href="../../index.html">
-            <img src="../../assets/images/navbar/home (1).png" alt="home" />
+            <img src="../assets/images/navbar/home (1).png" alt="home" />
           </a>
           <a id="mission_div" href="pages/ourMission.html">
             <img
-              src="../../assets/images/navbar/active/mission (3).png"
+              src="../../assets/images/navbar/mission (2).png"
               alt="mission"
             />
           </a>
-          <a id="account_div" href="../account.html">
-            <img src="../../assets/images/navbar/user (1).png" alt="" />
+          <a id="account_div" href="account.html">
+            <img src="../assets/images/navbar/active/user (2).png" alt="" />
           </a>
         </div>
       </div>
     </div>
-    <div class="mainWrap">
-      <div class="divContainer">
-        <div id="pageTitle">Our Reach</div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">10k+ views</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">20k+ impressions</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">100+ followers</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">20+ videos</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">300+ likes</p>
-        </div>
-      </div>
-      <div class="divContainer">
-        <div id="pageTitle">Topics Covered</div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">Current Events</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">Global Warming</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">SAT Concepts</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">Artificial Intelligence</p>
-        </div>
-      </div>
-      <div class="wrapContainer">
-        <div class="wrapTile">
-          <p class="impactText">Quantum Computing</p>
-        </div>
-      </div>
-    </div>
+    <div
+      id="g_id_onload"
+      data-client_id="YOUR_GOOGLE_CLIENT_ID"
+      data-login_uri="https://your.domain/your_login_endpoint"
+      data-your_own_param_1_to_login="any_value"
+      data-your_own_param_2_to_login="any_value"
+    ></div>
     <div class="widgetContainer">
       <div class="customWidget">
         <div class="option">
-          <a href="../ourMission.html"
-            ><h1 id="missionButton">Our Mission</h1></a
-          >
+          <a href="../ourMission.html"><h1 id="accountButton">Account</h1></a>
         </div>
         <div class="imageHolder">
           <img src="../../assets/images/mainIMG.png" alt="" id="navImage" />
         </div>
         <div class="option">
-          <a href="ourImpact.html"> <h1 id="impactButton">Impact</h1></a>
-        </div>
-        <div class="option">
-          <a href="aboutUs.html"><h1 id="aboutButton">About Us</h1></a>
+          <a href="account/publish.html">
+            <h1 id="publishButton">Publish</h1></a
+          >
         </div>
       </div>
     </div>

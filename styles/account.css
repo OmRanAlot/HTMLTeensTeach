@@ -1,0 +1,6 @@
+#account_div {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+#accountButton{
+    background-color: var(--TeensTeachBlue);
+}
