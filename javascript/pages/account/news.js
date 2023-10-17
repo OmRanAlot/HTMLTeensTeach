@@ -6,7 +6,8 @@ let interestsArray = [
   "shoes",
   "television",
   "watches",
-  "space"
+  "space",
+  "google"
 ];
 let mainDiv = document.querySelector(".mainContainer");
 
