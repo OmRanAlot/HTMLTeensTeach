@@ -7,7 +7,11 @@ let interestsArray = [
   "television",
   "watches",
   "space",
-  "google"
+  "google",
+  "hair",
+  "twitch",
+  "technology",
+  "cars"
 ];
 let mainDiv = document.querySelector(".mainContainer");
 
