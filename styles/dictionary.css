@@ -260,8 +260,8 @@ input:focus {
 #arrowButton:hover {
   cursor: pointer;
 }
-#addButton:hover{
-    cursor: pointer;
+#addButton:hover {
+  cursor: pointer;
 }
 #expandedInfo {
   background-color: var(--background);
@@ -277,18 +277,18 @@ input:focus {
   z-index: -1;
   position: relative;
 }
-.key{
-    color: #5a4f4f;
-    font-family: "Comfortaa";
-    font-weight: 50;
+.key {
+  color: #5a4f4f;
+  font-family: "Comfortaa";
+  font-weight: 50;
 }
-.value{
-    color: #757575;
-    font-family: "Comfortaa";
-    font-weight: 50;
+.value {
+  color: #757575;
+  font-family: "Comfortaa";
+  font-weight: 50;
 }
-#expandedInfo{
-    display: none;
+#expandedInfo {
+  display: none;
 }
 #addButton {
   background-color: rgba(27, 168, 233, 1);

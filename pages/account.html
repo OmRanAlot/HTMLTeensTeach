@@ -14,6 +14,11 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <link rel="stylesheet" href="../../styles/generatlEl.css" />
 
+    <script
+      defer
+      type="text/javascript"
+      src="../javascript/pages/account/account.js"
+    ></script>
     <!-- <link rel="stylesheet" href="../../styles/mission.css" /> -->
     <link rel="stylesheet" href="../../styles/navbarStyle.css" />
     <link rel="stylesheet" href="../../styles/backgroundPage.css" />
@@ -42,7 +47,7 @@
     <div class="frontContainer">
       <div class="frontPage">
         <div class="firstElements">
-          <a id="forum_div" href="../pages/forum.html">
+          <a id="forum_div" href="../pages/news.html">
             <img src="../../assets/images/navbar/growth.png" alt="about us" />
           </a>
 
@@ -74,28 +79,22 @@
         </div>
       </div>
     </div>
-    <!-- <div
-      id="g_id_onload"
-      data-client_id="YOUR_GOOGLE_CLIENT_ID"
-      data-login_uri="https://your.domain/your_login_endpoint"
-      data-your_own_param_1_to_login="any_value"
-      data-your_own_param_2_to_login="any_value"
-    ></div> -->
+    <h1 id="select">Select Your Interests</h1>
+    <p id="description">
+      These interests will be stored in your browser and help you get a more
+      personalized experience for <a href="../pages/news.html">news</a> and
+      <a href="../pages/forum/videos.html">video</a> recommendations.
+    </p>
+    <div id="interestsContainer">
+    </div>
     <div class="widgetContainer">
       <div class="customWidget">
-        <div class="option">
-          <a href="../ourMission.html"><h1 id="accountButton">Account</h1></a>
-        </div>
         <div class="imageHolder">
           <img src="../../assets/images/mainIMG.png" alt="" id="navImage" />
         </div>
-        
         <div class="option">
-          <a href="account/interests.html">
-            <h1 id="interestsButton">Interests</h1></a
-          >
+          <a href="../ourMission.html"><h1 id="accountButton">Interests</h1></a>
         </div>
-        
       </div>
     </div>
   </body>

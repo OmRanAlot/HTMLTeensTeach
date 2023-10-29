@@ -13,11 +13,19 @@
     <link rel="stylesheet" href="../../styles/navbarStyle.css" />
     <link rel="stylesheet" href="../../styles/backgroundPage.css" />
     <link rel="stylesheet" href="../../styles/mainIconStyle.css" />
+    <link rel="stylesheet" href="../../styles/videos.css" />
     <link rel="stylesheet" href="../../styles/generatlEl.css" />
-    <link rel="stylesheet" href="../../styles/mission.css" />
-    <link rel="stylesheet" href="../../styles/about.css" />
-    <link rel="stylesheet" href="../../styles/contact.css" />
-    <link rel="icon" type="image/x-icon" href="../assets/images/mainIMG.png" />
+    <script
+      defer
+      type="text/javascript"
+      src="../../javascript/config.js"
+    ></script>
+    <script defer src="../../javascript/pages/account/videos.js"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/mainIMG.png"
+    />
   </head>
   <body>
     <div class="background">
@@ -33,14 +41,16 @@
       <div></div>
       <div></div>
     </div>
-    <div class="fullPage">
+    <div class="frontContainer">
       <div class="frontPage">
         <div class="firstElements">
-          <a id="forum_div">
-            <img src="../../assets/images/navbar/growth.png" alt="about us" />
+          <a id="forum_div" href="../forum.html">
+            <img
+              src="../../assets/images/navbar/active/growth (2).png"
+              alt="about us"
+            /><!--Make this the blue growth thingl-->
           </a>
-
-          <a id="study_div">
+          <a id="study_div" href="../study.html">
             <img src="../../assets/images/navbar/open-book.png" alt="" />
             <!-- <h1>What We Do</h1> -->
           </a>
@@ -48,7 +58,6 @@
             <img src="../../assets/images/navbar/community.png" alt="" />
           </a>
         </div>
-
         <div id="title">
           <h1>Teens Teach</h1>
         </div>
@@ -56,9 +65,9 @@
           <a id="home_div" href="../../index.html">
             <img src="../../assets/images/navbar/home (1).png" alt="home" />
           </a>
-          <a id="mission_div" href="pages/ourMission.html">
+          <a id="mission_div" href="../../pages/ourMission.html">
             <img
-              src="../../assets/images/navbar/active/mission (3).png"
+              src="../../assets/images/navbar/mission (2).png"
               alt="mission"
             />
           </a>
@@ -67,161 +76,25 @@
           </a>
         </div>
       </div>
-      <div class="mainSection">
-        <div class="divContainer">
-          <div id="pageTitle">Our work</div>
+    </div>
+    <div id="bigContainer">
+    </div>
+    <div class="widgetContainer">
+      <div class="customWidget">
+        <!-- <div class="option">
+          <a href="../forum.html"><h1 id="articleButton">Articles</h1></a>
+        </div> -->
+        <div class="option">
+          <a href="forum/news.html"><h1 id="newsButton">News</h1></a>
         </div>
-        <div id="reelHolder">
-          <div class="reelDiv">
-            <div class="reelTitle">
-              <p class="largeText">Educational</p>
-            </div>
-            <div class="reelDivDiv">
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/nQzAb9WS7q4"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/MaRQDeAb4Y4"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/BHI8efoCRVA"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/Kt_bOKDrGGw"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/HHr9gV75Xrc"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
+        <div class="imageHolder">
+          <img src="../../assets/images/mainIMG.png" alt="" id="navImage" />
         </div>
-        <div id="reelHolder">
-          <div class="reelDiv">
-            <div class="reelTitle">
-              <p class="largeText">SAT</p>
-            </div>
-            <div id="reelVid">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/_WghDL3uslI"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
+        <div class="option">
+          <a href="../forum/chat.html"> <h1 id="impactButton">Chat</h1></a>
         </div>
-
-        <div id="reelHolder">
-          <div class="reelDiv">
-            <div class="reelTitle">
-              <p class="largeText">Conversations</p>
-            </div>
-            <div class="reelDivDiv">
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/Hx-ATLZenEc"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/MjCJsk14I_8"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-
-              <div id="reelVid">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/cg5QDlezgN8"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="reelHolder">
-          <div class="reelTitle">
-            <p class="largeText">Shorts</p>
-            <hr id="titleHr" />
-          </div>
-          <div class="reelDiv"></div>
-        </div>
-      </div>
-      <div class="widgetContainer">
-        <div class="customWidget">
-          <div class="option">
-            <a href="../ourMission.html"
-              ><h1 id="missionButton">Our Mission</h1></a
-            >
-          </div>
-          <div class="imageHolder">
-            <img src="../../assets/images/mainIMG.png" alt="" id="navImage" />
-          </div>
-          <div class="option">
-            <a href="ourImpact.html"> <h1>Impact</h1></a>
-          </div>
-          <div class="option">
-            <a href="aboutUs.html"><h1 id="aboutButton">About Us</h1></a>
-          </div>
+        <div class="option">
+          <a href="forum/videos.html"><h1 id="videosButton">Videos</h1></a>
         </div>
       </div>
     </div>

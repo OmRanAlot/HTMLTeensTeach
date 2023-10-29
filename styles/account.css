@@ -1,6 +1,48 @@
 #account_div {
   background-color: rgba(0, 0, 0, 0.85);
 }
-#accountButton{
-    background-color: var(--TeensTeachBlue);
+#accountButton {
+  background-color: var(--TeensTeachBlue);
+}
+#select {
+  font-family: "Comfortaa";
+  text-align: center;
+  margin-top: 100px;
+}
+#description {
+  text-align: center;
+}
+
+#interestsContainer {
+  margin-top: 10px;
+  box-shadow: rgba(73, 71, 71, 0.25) 2px 2px 9px 4px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  width: 90vw;
+  margin-left: 5vw;
+  height: 60vh;
+  border-radius: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#interestsContainer div {
+  width: min-content;
+  padding: 12px;
+  border-radius: 10px;
+  height: min-content;
+  margin-left: 25px;
+  font-size: 25px;
+  color: white;
+  font-family: "Comfortaa";
+  margin-top: 10px;
+  box-shadow: rgb(27 168 233 / 40%) 1px 1px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#interestsContainer div:hover {
+  cursor: pointer;
+}
+.true {
+  background-color: #1ba8e9;
 }

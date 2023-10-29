@@ -1,18 +1,24 @@
-let interestsArray = [
-  "Tesla",
-  "Microsoft",
-  "Politics",
-  "Sports",
-  "shoes",
-  "television",
-  "watches",
-  "space",
-  "google",
-  "hair",
-  "twitch",
-  "technology",
-  "cars"
-];
+let sheetID = "1AykXwXXtj4FNwRgfnrKhpzRUur9B0wnAs0QeMlzaXSM";
+let sheetTitle = "Sheet1";
+let sheetRange = "A1:Z993";
+let interestsList = [];
+let userInterests = [];
+console.log(document.cookie);
+console.log(extractCookie());
+
+let fullURL =
+  "https://docs.google.com/spreadsheets/d/" +
+  sheetID +
+  "/gviz/tq?sheet=" +
+  sheetTitle +
+  "&range=" +
+  sheetRange;
+fetch(fullURL)
+  .then((res) => res.text())
+  .then((rep) => {
+    let data = JSON.parse(rep.substr(47).slice(0, -2));
+  });
+let interestsArray = extractCookie();
 let mainDiv = document.querySelector(".mainContainer");
 
 function createElement(photoUrl, url, title, source, author) {
@@ -108,3 +114,31 @@ function itInterests() {
 }
 
 itInterests();
+function extractCookie() {
+  let str = document.cookie;
+  let running = false;
+  let desiredList = "";
+  let finalList = [];
+  let word = "";
+  for (let i = 0; i < str.length; i++) {
+    if (running) {
+      desiredList += str[i];
+    }
+    if (str[i] == ":") {
+      running = true;
+    }
+    if (str[i] == ";") {
+      running = false;
+    }
+  }
+  console.log(desiredList);
+  for (let i = 0; i < desiredList.length; i++) {
+    if (desiredList[i] != "," && desiredList[i] != ";") {
+      word += desiredList[i];
+    } else if (desiredList[i] == "," || i == desiredList.length - 1) {
+      finalList.push(word);
+      word = "";
+    }
+  }
+  return finalList;
+}
