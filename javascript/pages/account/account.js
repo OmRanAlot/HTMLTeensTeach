@@ -57,9 +57,9 @@ function addData(interest) {
     addCookie(userInterests);
     extractCookie();
     console.log(document.cookie);
-    if(userInterests.length<4){
-        alert("Please choose at least 4 interests");
-    }
+    // if(userInterests.length<4){
+    //     alert("Please choose at least 4 interests");
+    // }
   };
 }
 

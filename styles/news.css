@@ -4,6 +4,9 @@
 #newsButton {
   background-color: var(--TeensTeachBlue);
 }
+*{
+  overflow: hidden;
+}
 .articleText {
   font-family: "Courier New";
   font-size: 30px;

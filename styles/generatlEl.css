@@ -7,6 +7,7 @@ a {
   color: white;
   text-decoration: none;
 }
+
 .smallText {
   font-size: 30px;
   padding: 10px;
@@ -147,24 +148,86 @@ hr {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
+#account_div img {
+  width: 43px;
+  height: 43px;
+}
+#home_div img {
+  width: 47px;
+  height: 47px;
+}
+#study_div img {
+  margin-top: 9px;
+}
 @media only screen and (max-width: 700px) {
   #mainImage {
     width: 30vh;
     height: 30vh;
     margin-left: 35%;
   }
+  #home_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #forum_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #study_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #community_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #mission_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #account_div img {
+    width: 28px;
+    height: 28px;
+  }
+
+  #account_div {
+    width: 38px;
+    height: 38px;
+  }
+  #home_div {
+    width: 38px;
+    height: 38px;
+  }
+  #forum_div {
+    width: 38px;
+    height: 38px;
+  }
+  #study_div {
+    width: 38px;
+    height: 38px;
+  }
+  #community_div {
+    width: 38px;
+    height: 38px;
+  }
+  #mission_div {
+    width: 38px;
+    height: 38px;
+  }
   .background {
-    width: 35vh;
-    height: 35vh;
-    margin-left: 31%;
+    width: 99vw;
+    height: 45px;
+  }
+  .frontPage div a{
+    margin: 2px;
+  }
+  .frontPage{
+    margin-top: 3px;
   }
   .backShadow {
     width: 35vh;
     height: 35vh;
     margin-left: 31%;
-  }
-  #title {
-    opacity: 0;
   }
   #backgroundText h1 {
     margin-left: -20px;
@@ -193,8 +256,8 @@ hr {
     width: 50px;
     height: 50px;
   }
-  .smallText {
-    font-size: 20px;
+  .lastElements img {
+    width: 15px;
   }
   .descriptionClass {
     font-size: 15px;
@@ -202,15 +265,21 @@ hr {
   #pageTitle {
     font-size: 40px;
   }
-}
-#account_div img {
-  width: 43px;
-  height: 43px;
-}
-#home_div img{
-  width: 47px;
-  height: 47px;
-}
-#study_div img{
-  margin-top: 9px;
+  #title {
+    font-size: 8px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 1;
+  }
+  .frontPage {
+    width: 100vw;
+  }
+  #navImage{
+    width: 40px;
+    height: 40px;
+  }
+  .background{
+    margin-left: 0px;
+  }
 }

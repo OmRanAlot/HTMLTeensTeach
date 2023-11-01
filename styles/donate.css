@@ -29,6 +29,7 @@ input {
   text-align: center;
   border: 1px black;
   padding-left: 10px;
+  
   margin-bottom: -10px;
   font-family: "Comfortaa";
   background-color: var(--background);
@@ -56,6 +57,7 @@ input {
   margin-top: 30px;
 }
 #donationDescription {
+  font-weight: 100;
   margin-top: 20px;
   font-family: "Comfortaa";
   margin-left: 20vw;
