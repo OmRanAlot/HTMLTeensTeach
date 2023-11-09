@@ -1,0 +1,42 @@
+#forum_div {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+#videosButton {
+  background-color: var(--TeensTeachBlue);
+}
+#select {
+  font-family: "Comfortaa";
+  text-align: center;
+  margin-top: 60px;
+}
+#description {
+  text-align: center;
+}
+#channelContainer {
+    margin-top: 20px;
+  border-radius: 10px;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 20px;
+  box-shadow: rgb(27 168 233 / 40%) 2px 2px 12px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#channelContainer img {
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+#channelContainer h1{
+    text-align: center;
+    font-weight: 100;
+    font-family: "Comfortaa";
+}
+#bigContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

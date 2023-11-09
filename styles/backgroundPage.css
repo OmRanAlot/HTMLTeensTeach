@@ -15,31 +15,32 @@
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
-.mainSection, .background{
-  margin-left: 90px;
-}
+/* .mainSection,
 .background {
-  /* height: 99vh; *//* border-radius: 20px; *//* width: calc(100% - 94px); */
-  height: 80vh;
-  width: 80vh;
+  margin-left: 90px;
+} */
+.background {
+  /* height: 99vh; */ /* border-radius: 20px; */ /* width: calc(100% - 94px); */
+  height: 65px;
+  width: 700px;
+  margin-top: 2px;
   margin-bottom: 0.5vh;
+  border-radius: 100px;
   /* margin-left: 90px; */
-  border-radius: 50%;
   position: absolute;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   /* left: 0; */
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-
-  
+  position: fixed;
+  z-index: 10;
   overflow: hidden;
   /* animation: spin 8s infinite linear; */
   /* box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px; */
   /* box-shadow: rgb(14 230 230) 7px -3px 20px 0px; */
   box-shadow: rgb(14 230 230) 2px -1px 20px 0px;
-  z-index: -1;
   transition: all 1.5s cubic-bezier(0.54, 0.1, 0.31, 1.08);
 }
 .background:active {
@@ -50,9 +51,6 @@
 .elements {
   margin-top: 4vh;
   height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-left: 2vh;
   z-index: 10;
   position: fixed;
@@ -62,7 +60,7 @@
     transform: rotate(360deg);
   }
 }
-body{
+body {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -74,7 +72,7 @@ body{
   width: 100%;
   border-radius: 20px; /*changeThing, 5%*/
   overflow: hidden;
-  backdrop-filter: blur(2em); /*changeThing, 1.2*/
+  backdrop-filter: blur(1em); /*changeThing, 1.2*/
   -webkit-backdrop-filter: blur(2em);
 }
 
@@ -109,7 +107,7 @@ body{
   left: -5%;
   top: 0;
   animation-duration: 50s;
-  animation-delay: 1s;
+  animation-delay: 8s;
 }
 
 .background div:nth-child(2) {
@@ -119,7 +117,7 @@ body{
   top: 15%;
   right: -15%;
   animation-duration: 45s;
-  animation-delay: 5s;
+  animation-delay: 1s;
 }
 
 .background div:nth-child(3) {
@@ -129,7 +127,7 @@ body{
   bottom: -30%;
   right: -20%;
   animation-duration: 10s;
-  animation-delay: 1s;
+  animation-delay: 4s;
 }
 
 .background div:nth-child(4) {
@@ -148,7 +146,7 @@ body{
   background-color: var(--TeensTeachAlt5);
   top: 50%;
   left: 0;
-  animation-duration: 2.5s;
+  animation-duration: 15s;
   animation-delay: 4s;
 }
 

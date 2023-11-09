@@ -1,0 +1,66 @@
+#map {
+  height: 450px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: rgb(27 168 233 / 40%) 1px 1px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+input:focus {
+  outline: none;
+}
+#libraryButton {
+  background-color: var(--TeensTeachBlue);
+}
+#community_div {
+  background-color: black;
+}
+#mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button:hover{
+    cursor: pointer;
+}
+input {
+  width: 310px;
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px black;
+  padding-left: 10px;
+  margin-bottom: -10px;
+  font-family: "Comfortaa";
+  background-color: var(--background);
+  color: var(--TeensTeachBlue);
+  outline: none;
+  height: 50px;
+  box-shadow: rgb(27 168 233 / 40%) 2px 2px 8px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#searchButton {
+  box-shadow: rgb(27 168 233 / 40%) 2px 2px 8px,
+    rgba(27, 168, 233, 0.3) 0px 7px 13px -3px,
+    rgba(27, 168, 233, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  color: black;
+  font-family: "Comfortaa";
+  font-weight: 400;
+  background-color: var(--TeensTeachBlue);
+  margin-left: 30px;
+  border: none;
+  /* #757575 */
+}
+input {
+  margin-left: auto;
+  margin-right: auto;
+}
+#textContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}

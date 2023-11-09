@@ -1,0 +1,15 @@
+#mission_div {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+#missionButton {
+  background-color: rgba(0, 0, 0, 0);
+}
+#impactButton {
+  background-color: var(--TeensTeachBlue);
+}
+.whiteText{
+    color: white;
+}
+#pageTitle{
+    color: whitesmoke;
+}

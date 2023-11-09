@@ -1,9 +1,11 @@
 .navbar {
-  height: 100vh;
   position: fixed;
   bottom: 0;
   /* background-color: blue; */
   width: 80px;
+  margin: auto;
+  right: 0;
+  left: 0;
 }
 #navContainer {
   width: 80px;
@@ -14,63 +16,70 @@
   right: 0;
 }
 #navImage {
-  position: fixed;
-  width: 70px;
-  height: 70px;
-  left: 0;
-  bottom: 0;
-  z-index: 4;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
 }
 
-.navContainer {
-  height: 82px; /*changeThis 100vh*/
-  width: 82px;
+#study_div img,
+#forum_div img {
+  width: 44px;
+  height: 44px;
+}
+
+/* .navContainer {
+  height: 82px; /*changeThis 100vh
+  width: 200px;
   margin-left: 4px;
   margin-bottom: 4px;
   position: absolute;
-  /* margin: auto; */
-  /* left: 0; */
+  /* margin: auto; 
+   left: 0; 
   left: 0;
   bottom: 0;
-  border-radius: 10%;
+  border-radius: 100px;
   overflow: hidden;
-  /* animation: spin 8s infinite linear; */
-  /* box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px; */
-  /* box-shadow: rgb(14 230 230) 7px -3px 20px 0px; */
+  animation: spin 8s infinite linear; 
+  box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px;
+  box-shadow: rgb(14 230 230) 7px -3px 20px 0px;
   box-shadow: rgb(14 230 230) 2px -1px 20px 0px;
   z-index: 3;
   transition: all 1.5s cubic-bezier(0.54, 0.1, 0.31, 1.08);
-}
+} */
 
-html{
-  overflow: hidden;
+html {
+  overflow-y: scroll;
 }
-.elements {
-  margin-top: 4vh;
-  height: 75vh;
+.firstElements,
+.lastElements {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 2vh;
   z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+}
+.widgetContainer {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  bottom: 0;
   position: fixed;
 }
-.elements a{
-    opacity: 0;
+.firstElements a img,
+.lastElements a img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
 }
-.elements a img {
-  width: 60px;
-  height: 60px;
-}
-.elements a {
+.firstElements a,
+.lastElements a {
   width: max-content;
-  height: 60px;
-  width: 60px;
-  background-color: #00afff;
+  height: 56px;
+  width: 55px;
+  background-color: rgba(0, 175, 255, 0.1);
   /* background-color: white; */
-  border-radius: 10px;
+  border-radius: 100px;
+  margin-left: 3px;
+  margin-right: 3px;
 
   display: flex;
   flex-direction: row;
@@ -102,19 +111,36 @@ html{
     transform: rotate(360deg);
   }
 }
-
-.navContainer:before {
+.frontContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.frontPage {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  position: fixed;
+  z-index: 10;
+}
+.frontPage div {
+  justify-content: space-between;
+}
+/* .navContainer:before {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  border-radius: 10%; /*changeThing, 5%*/
+  border-radius: 10%; /*changeThing, 5%
   overflow: hidden;
-  backdrop-filter: blur(.9em); /*changeThing, 1.2*/
-  -webkit-backdrop-filter: blur(.9em);
-}
+  backdrop-filter: blur(0.9em); /*changeThing, 1.2
+  -webkit-backdrop-filter: blur(0.9em);
+} */
 
-.navContainer:after,
+/* .navContainer:after,
 .navContainer:after {
   position: absolute;
   content: "";
@@ -123,14 +149,14 @@ html{
   top: 25%;
   left: 25%;
   border-radius: 50%;
-}
+} */
 
-.navContainer div {
+/* .navContainer div {
   position: absolute;
   border-radius: 50%;
   z-index: -1;
   animation: scale-up infinite;
-}
+} */
 
 @keyframes scale-up {
   50% {
@@ -138,6 +164,35 @@ html{
   }
 }
 
+.customWidget {
+  width: max-content;
+  display: flex;
+  background-color: var(--background);
+  box-shadow: rgba(73, 71, 71, 0.25) 2px 2px 9px 4px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 100px;
+  font-family: "Comfortaa", cursive;
+  font-size: 10px;
+  position: fixed;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  z-index: 10;
+  bottom: 0;
+}
+.option h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+}
+.option h1:hover {
+  cursor: pointer;
+}
+#sloganButton {
+  background-color: var(--TeensTeachBlue);
+  border-radius: 100px;
+}
 .navContainer div:nth-child(1) {
   height: 150%;
   width: 100%;
@@ -255,10 +310,10 @@ html{
   right: 55%;
   animation-duration: 7s;
 }
-.elements div:nth-child(1){
-    transition-duration: all 3s;
+.elements div:nth-child(1) {
+  transition-duration: all 3s;
 }
-#backgroundText h1{
+#backgroundText h1 {
   text-orientation: upright;
   writing-mode: vertical-rl;
   height: 89vh;
@@ -270,7 +325,139 @@ html{
   font-weight: bold;
   font-family: "Comfortaa", cursive;
 }
-#backgroundText{
+#backgroundText {
   position: absolute;
   z-index: -2px;
+}
+#mission_div img {
+  width: 38px;
+  height: 38px;
+  /* padding-bottom: 5px; */
+}
+@media only screen and (max-width: 700px) {
+  #mainImage {
+    width: 30vh;
+    height: 30vh;
+    margin-left: 35%;
+  }
+  #home_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #forum_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #study_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #community_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #mission_div img {
+    width: 28px;
+    height: 28px;
+  }
+  #account_div img {
+    width: 28px;
+    height: 28px;
+  }
+
+  #account_div {
+    width: 38px;
+    height: 38px;
+  }
+  #home_div {
+    width: 38px;
+    height: 38px;
+  }
+  #forum_div {
+    width: 38px;
+    height: 38px;
+  }
+  #study_div {
+    width: 38px;
+    height: 38px;
+  }
+  #community_div {
+    width: 38px;
+    height: 38px;
+  }
+  #mission_div {
+    width: 38px;
+    height: 38px;
+  }
+  .background {
+    width: 99vw;
+    height: 45px;
+  }
+  .frontPage div a {
+    margin: 2px;
+  }
+  .frontPage {
+    margin-top: 3px;
+  }
+  .backShadow {
+    width: 35vh;
+    height: 35vh;
+    margin-left: 31%;
+  }
+  #backgroundText h1 {
+    margin-left: -20px;
+  }
+  .navContainer {
+    width: 72px;
+    height: 72px;
+  }
+  #navImage {
+    width: 60px;
+    height: 60px;
+  }
+  #slogan {
+    margin-top: 10px;
+    top: 0;
+    margin-left: 65px;
+  }
+  .elements {
+    margin-left: 16px;
+  }
+  .elements a {
+    height: 50px;
+    width: 50px;
+  }
+  .elements a img {
+    width: 50px;
+    height: 50px;
+  }
+  .lastElements img {
+    width: 15px;
+  }
+  .descriptionClass {
+    font-size: 15px;
+  }
+  #pageTitle {
+    font-size: 40px;
+  }
+  #title {
+    font-size: 8px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 1;
+  }
+  .frontPage {
+    width: 100vw;
+  }
+  .widgetContainer h1 {
+    font-size: 15px;
+  }
+  .widgetContainer {
+    height: 15px;
+  }
+  #navImage {
+    width: 40px;
+    height: 40px;
+  }
 }
