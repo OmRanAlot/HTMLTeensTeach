@@ -2,6 +2,12 @@ let div = document.getElementById("fact-container");
 let sloganButton = document.getElementById("sloganButton");
 let factButton = document.getElementById("factButton");
 
+let logo = document.getElementById("mainImage");
+
+logo.addEventListener("click", function(){
+  location = "pages/community/donate.html";
+
+})
 let options = {
   method: "GET",
   headers: { "x-api-key": config.api_key_fact },
